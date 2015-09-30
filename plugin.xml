@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+        id="com.dosalcubo.tid.ios.sharing.fb"
+        version="0.0.1">
+
+  <name>FBSharing</name>
+
+  <engines>
+    <engine name="cordova" version=">=3.4.0"/>
+  </engines>
+
+<!--
+  <asset src="www/fbsharing.js" target="js/fbsharing.js"/>
+
+  <js-module src="www/fbsharing.js" name="fbsharing">
+    <clobbers target="fbsharing" />
+  </js-module>
+-->
+
+  <platform name="ios">
+    
+    <config-file target="config.xml" parent="/widget">
+      <feature name="FBSharing">
+        <param name="ios-package" value="FBSharing" />
+      </feature>
+    </config-file>
+
+    <header-file src="src/ios/FBSharing.h" target-dir="FBSharing"/>
+    <source-file src="src/ios/FBSharing.m" target-dir="FBSharing"/>
+  </platform>
+
+</plugin>
