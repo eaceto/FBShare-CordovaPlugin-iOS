@@ -9,14 +9,6 @@
     <engine name="cordova" version=">=3.4.0"/>
   </engines>
 
-<!--
-  <asset src="www/fbsharing.js" target="js/fbsharing.js"/>
-
-  <js-module src="www/fbsharing.js" name="fbsharing">
-    <clobbers target="fbsharing" />
-  </js-module>
--->
-
   <platform name="ios">
     
     <config-file target="config.xml" parent="/widget">
